@@ -7,6 +7,15 @@ export interface StoryRampConfig {
     contextLabel: string;
 }
 
+export interface DQVConfig {
+    title: string;
+    subtitle: string;
+    xAxisLabel: string;
+    yAxisLabel: string;
+    credits: boolean;
+    type: string;
+}
+
 export interface Intro {
     logo: {
         src: string;
@@ -86,6 +95,7 @@ export interface ChartPanel extends BasePanel {
     type: PanelType.Chart;
     src: string;
     expandable?: boolean;
+    config?: DQVConfig;
 }
 
 // TODO: add more definitions here as needed
